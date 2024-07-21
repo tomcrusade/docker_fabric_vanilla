@@ -1,0 +1,183 @@
+{
+  "active_profile": 1,
+  "active_modpack": 0,
+  "profiles": [
+    {
+      "name": "1.21-server",
+      "output_dir": "/temp/mods",
+      "game_version": "1.21",
+      "mod_loader": "Fabric",
+      "mods": [
+        {
+          "name": "Alternate Current",
+          "identifier": {
+            "ModrinthProject": "r0v8vy1s"
+          }
+        },
+        {
+          "name": "Bottled Air",
+          "identifier": {
+            "ModrinthProject": "hvrrNux3"
+          }
+        },
+        {
+          "name": "Bundle Recipe",
+          "identifier": {
+            "ModrinthProject": "Hkc2j5Bf"
+          }
+        },
+        {
+          "name": "Chunky",
+          "identifier": {
+            "ModrinthProject": "fALzjamp"
+          }
+        },
+        {
+          "name": "Collective",
+          "identifier": {
+            "ModrinthProject": "e0M1UDsY"
+          }
+        },
+        {
+          "name": "Explorify",
+          "identifier": {
+            "ModrinthProject": "HSfsxuTo"
+          }
+        },
+        {
+          "name": "Fabric API",
+          "identifier": {
+            "ModrinthProject": "P7dR8mSH"
+          }
+        },
+        {
+          "name": "Fabric Tailor",
+          "identifier": {
+            "ModrinthProject": "g8w1NapE"
+          }
+        },
+        {
+          "name": "FerriteCore",
+          "identifier": {
+            "ModrinthProject": "uXXizFIs"
+          }
+        },
+        {
+          "name": "Furnace Recycle",
+          "identifier": {
+            "ModrinthProject": "HyKmtI3L"
+          }
+        },
+        {
+          "name": "Hopo Better Mineshaft",
+          "identifier": {
+            "ModrinthProject": "9IxCUYAP"
+          }
+        },
+        {
+          "name": "Hopo Better Underwater Ruins",
+          "identifier": {
+            "ModrinthProject": "BuWCQzqf"
+          }
+        },
+        {
+          "name": "Illager Expansion Recrafted",
+          "identifier": {
+            "ModrinthProject": "zkp424MG"
+          }
+        },
+        {
+          "name": "Krypton",
+          "identifier": {
+            "ModrinthProject": "fQEb0iXm"
+          }
+        },
+        {
+          "name": "Lios Overhauled Villages",
+          "identifier": {
+            "ModrinthProject": "piqpXT8s"
+          }
+        },
+        {
+          "name": "Lithium",
+          "identifier": {
+            "ModrinthProject": "gvQqBUqZ"
+          }
+        },
+        {
+          "name": "MAmbience",
+          "identifier": {
+            "ModrinthProject": "qPzLkTsE"
+          }
+        },
+        {
+          "name": "MidnightLib",
+          "identifier": {
+            "ModrinthProject": "codAaoxh"
+          }
+        },
+        {
+          "name": "ModernFix",
+          "identifier": {
+            "ModrinthProject": "nmDcB62a"
+          }
+        },
+        {
+          "name": "No Chat Reports",
+          "identifier": {
+            "ModrinthProject": "qQyHxfxd"
+          }
+        },
+        {
+          "name": "Nullscape",
+          "identifier": {
+            "ModrinthProject": "LPjGiSO4"
+          }
+        },
+        {
+          "name": "Polymer",
+          "identifier": {
+            "ModrinthProject": "xGdtZczs"
+          }
+        },
+        {
+          "name": "Repurposed Structures - Quilt/Fabric",
+          "identifier": {
+            "ModrinthProject": "muf0XoRe"
+          }
+        },
+        {
+          "name": "Roguelike Dungeons",
+          "identifier": {
+            "ModrinthProject": "MFpvbNGE"
+          }
+        },
+        {
+          "name": "Server Sleep",
+          "identifier": {
+            "ModrinthProject": "Cw8IlnGM"
+          }
+        },
+        {
+          "name": "Tectonic",
+          "identifier": {
+            "ModrinthProject": "lWDHr9jE"
+          }
+        },
+        {
+          "name": "Terralith",
+          "identifier": {
+            "ModrinthProject": "8oi3bsk5"
+          }
+        },
+        {
+          "name": "Trinkets (Polymer Port)",
+          "identifier": {
+            "ModrinthProject": "G8hlgtEk"
+          }
+        }
+      ]
+    }
+  ],
+  "modpacks": []
+}
