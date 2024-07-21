@@ -1,0 +1,70 @@
+x-default-fabric-env: &x-default-fabric-env
+  SERVER_NAME: 'happy_playing_server'
+  OVERRIDE_SERVER_PROPERTIES: 'TRUE'
+  ENFORCE_SECURE_PROFILE: 'FALSE'
+  EULA: 'TRUE'
+  ENABLE_WHITELIST: 'TRUE'
+  OP_PERMISSION_LEVEL: '2'
+  OPS: 'TomCrusade'
+  ENFORCE_WHITELIST: 'TRUE'
+  LEVEL_TYPE: 'DEFAULT'
+  LEVEL: 'world'
+  MAX_TICK_TIME: '60000'
+  NETWORK_COMPRESSION_THRESHOLD: '-1'
+  ALLOW_FLIGHT: 'TRUE'
+  ALLOW_NETHER: 'TRUE'
+  ANNOUNCE_PLAYER_ACHIEVEMENTS: 'TRUE'
+  ENABLE_COMMAND_BLOCK: 'FALSE'
+  ONLINE_MODE: 'TRUE'
+  FORCE_GAMEMODE: 'TRUE'
+  GENERATE_STRUCTURES: 'TRUE'
+  SNOOPER_ENABLED: 'FALSE'
+  SPAWN_ANIMALS: 'TRUE'
+  SPAWN_MONSTERS: 'TRUE'
+  SPAWN_NPCS: 'TRUE'
+  SPAWN_PROTECTION: '0'
+  MODE: 'survival'
+  PVP: 'true'
+  JVM_XX_OPTS: '-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1'
+  JVM_DD_OPTS: 'aikars.new.flags=true using.aikars.flags=https://mcflags.emc.gs'
+
+
+services:
+  mc:
+    build:
+      dockerfile: Dockerfile
+    environment:
+      <<: *x-default-fabric-env
+      EULA: "true"
+      INIT_MEMORY: '2G'
+      MAX_MEMORY: '2G'
+      TYPE: 'FABRIC'
+      VERSION: '1.21'
+      FABRIC_LOADER_VERSION: '0.15.11'
+      DIFFICULTY: 'hard'
+      MAX_PLAYERS: '10'
+      MAX_TICK_TIME: '180000'
+      MAX_WORLD_SIZE: '40000'
+      VIEW_DISTANCE: '12'
+      SIMULATION_DISTANCE: '7'
+      SPAWN_PROTECTION: '0'
+      MOTD: 'Happy Playing!!!'
+      SEED: '8442127674340339041'
+      WHITELIST: ''
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./files/world:/data/world
+      - ./files/logs:/data/logs
+      - ./files/crash_reports:/data/crash_reports
+      - ./files/resourcepacks:/data/resourcepacks
+      - ./files/banned-ips.json:/data/banned-ips.json
+      - ./files/banned-players.json:/data/banned-players.json
+      - ./files/ops.json:/data/ops.json
+      - ./files/whitelist.json:/data/whitelist.json
+      - ./files/usercache.json:/data/usercache.json
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+volumes:
+  files: {}
