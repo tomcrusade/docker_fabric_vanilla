@@ -31,8 +31,7 @@ x-default-fabric-env: &x-default-fabric-env
 
 services:
   mc:
-    build:
-      dockerfile: Dockerfile
+    image: trihatmaja/tomcrusade-minecraft-server:latest
     environment:
       <<: *x-default-fabric-env
       EULA: "true"
