@@ -4,17 +4,18 @@ Luckily, i experimented https://github.com/itzg/docker-minecraft-server with htt
 
 ## Setup
 You need to prepare:
-- An empty files folder besides `docker-compose.yaml`. This folder acts as your world files
+- An empty `files` folder besides `docker-compose.yaml`. This folder acts as your world files
 - Download and install docker compose
-  The, you can follow guides stated at https://github.com/itzg/docker-minecraft-server and https://github.com/gorilla-devs/ferium for respective config
+- You can follow one of these 2 option on setting up your server
+- To adjust env, edit `docker-compose.yaml` `services.mc.environment` key value, according to https://github.com/itzg/docker-minecraft-server
+- To adjust mods, you can edit `mod_config.json` by using [ferium cli](https://github.com/gorilla-devs/ferium) (make sure to only contain 1 profile and `output_dir` value is `/temp/mods`)
 
 Config explanation:
 - `Dockerfile` contains command to download and setup mods
 - `docker-compose.yaml` contains minecraft server setups and list of host folders included into the container
-- `mod_config.json` contains ferium config to store all your mod list. This can be modified with ferium cli
+- `mod_config.json` contains ferium config to store all your mod list. This can be modified with [ferium cli](https://github.com/gorilla-devs/ferium)
 
 ## Execution
 1. Make sure `files` folder has correct ownership
-2. Change mod_config.json `output_dir` value to `/temp/mods`
-3. Run `docker compose build mc` to build image and **download** the mods. If you want to add additional/ or modify/ or update mods in the future, run this command again
-4. Run `docker compose up mc` to intiate it
+2. Run `docker compose build mc` to build image and **download** the mods. If you want to add additional/ or modify/ or update mods in the future, run this command again
+3. Run `docker compose up mc` to intiate it
