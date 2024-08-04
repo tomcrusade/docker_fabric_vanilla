@@ -31,8 +31,7 @@ x-default-fabric-env: &x-default-fabric-env
 
 services:
   mc:
-    build:
-      dockerfile: Dockerfile
+    image: tomcrusade/mc-server-fabric-vanilla-1.21:latest
     environment:
       <<: *x-default-fabric-env
       EULA: "true"
