@@ -31,7 +31,7 @@ x-default-fabric-env: &x-default-fabric-env
 
 services:
   mc:
-    image: tomcrusade/mc-server-fabric-vanilla-1.21:latest
+    image: tomcrusade/minecraft-server:latest
     environment:
       <<: *x-default-fabric-env
       EULA: "true"
