@@ -23,4 +23,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{secrets.DOCKERHUB_USERNAME}}/mc-server-fabric-vanilla-1.21:latest, ${{secrets.DOCKERHUB_USERNAME}}/tomcrusade-minecraft-server:${{ github.sha }}
+          tags: ${{secrets.DOCKERHUB_USERNAME}}/minecraft-server:latest, ${{secrets.DOCKERHUB_USERNAME}}/minecraft-server:${{ github.sha }}
