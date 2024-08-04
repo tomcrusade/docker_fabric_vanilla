@@ -3,7 +3,7 @@
   "active_modpack": 0,
   "profiles": [
     {
-      "name": "1.21-server",
+      "name": "server",
       "output_dir": "/temp/mods",
       "game_version": "1.21",
       "mod_loader": "Fabric",
