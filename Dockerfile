@@ -7,7 +7,7 @@ RUN \
   mv ferium mcferium && \
   chown minecraft:root mcferium && \
   chmod 775 mcferium
-ADD ../mod-configs/fabric-vanila-1.21.json mod_config.json
+ADD mod_config.json mod_config.json
 ARG CACHEBUST=1
 RUN \
   mkdir -p mods && \

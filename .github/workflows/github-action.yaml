@@ -17,10 +17,10 @@ jobs:
         with:
           username: ${{secrets.DOCKERHUB_USERNAME}}
           password: ${{secrets.DOCKERHUB_TOKEN}}
-      - name: build and push minecraft-server-fabric-vanilla-1.21 docker image to registry
+      - name: build and push minecraft-server docker image to registry
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./dockerfiles/fabric-vanilla-1.21.Dockerfile
+          file: ./Dockerfile
           push: true
-          tags: ${{secrets.DOCKERHUB_USERNAME}}/minecraft-server-fabric-vanilla-1.21:latest, ${{secrets.DOCKERHUB_USERNAME}}/minecraft-server-fabric-vanilla-1.21:${{ github.sha }}
+          tags: ${{secrets.DOCKERHUB_USERNAME}}/minecraft-server:latest, ${{secrets.DOCKERHUB_USERNAME}}/minecraft-server:${{ github.sha }}
