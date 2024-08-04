@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - 'main'
-      - 'release/*'
-      - 'add-github-actions'
 jobs:
   build-push-to-registry:
     name: build and push docker image to registry
