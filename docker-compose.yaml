@@ -1,8 +1,10 @@
-x-default-fabric-env: &x-default-fabric-env
+x-default-env: &x-default-env
+  EULA: 'true'
+  JVM_XX_OPTS: '-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1'
+  JVM_DD_OPTS: 'aikars.new.flags=true using.aikars.flags=https://mcflags.emc.gs'
   SERVER_NAME: 'happy_playing_server'
   OVERRIDE_SERVER_PROPERTIES: 'TRUE'
   ENFORCE_SECURE_PROFILE: 'FALSE'
-  EULA: 'TRUE'
   ENABLE_WHITELIST: 'TRUE'
   OP_PERMISSION_LEVEL: '2'
   OPS: 'TomCrusade'
@@ -25,16 +27,15 @@ x-default-fabric-env: &x-default-fabric-env
   SPAWN_PROTECTION: '0'
   MODE: 'survival'
   PVP: 'true'
-  JVM_XX_OPTS: '-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1'
-  JVM_DD_OPTS: 'aikars.new.flags=true using.aikars.flags=https://mcflags.emc.gs'
-
 
 services:
   mc:
     image: tomcrusade/minecraft-server:latest
+    build:
+      args:
+        INCLUDED_MODS: 'tomcrusade-fabric-1_21-server'
     environment:
-      <<: *x-default-fabric-env
-      EULA: "true"
+      <<: *x-default-env
       INIT_MEMORY: '2G'
       MAX_MEMORY: '2G'
       TYPE: 'FABRIC'
@@ -57,6 +58,7 @@ services:
       - ./files/logs:/data/logs
       - ./files/crash_reports:/data/crash_reports
       - ./files/resourcepacks:/data/resourcepacks
+      - ./files/datapacks:/data/datapacks
       - ./files/banned-ips.json:/data/banned-ips.json
       - ./files/banned-players.json:/data/banned-players.json
       - ./files/ops.json:/data/ops.json
