@@ -3,8 +3,8 @@
   "active_modpack": 0,
   "profiles": [
     {
-      "name": "server",
-      "output_dir": "/temp/mods",
+      "name": "tomcrusade-fabric-1_21-server",
+      "output_dir": "mods-tomcrusade-fabric-1_21-server",
       "game_version": "1.21",
       "mod_loader": "Fabric",
       "mods": [
@@ -21,9 +21,21 @@
           }
         },
         {
+          "name": "Brutal Bosses - Custom Bosses[Forge/Fabric]",
+          "identifier": {
+            "CurseForgeProject": 557999
+          }
+        },
+        {
           "name": "Bundle Recipe",
           "identifier": {
             "ModrinthProject": "Hkc2j5Bf"
+          }
+        },
+        {
+          "name": "Chunk Sending[Forge/Fabric]",
+          "identifier": {
+            "CurseForgeProject": 831663
           }
         },
         {
@@ -39,6 +51,78 @@
           }
         },
         {
+          "name": "Cristel Lib",
+          "identifier": {
+            "ModrinthProject": "cl223EMc"
+          }
+        },
+        {
+          "name": "Cupboard",
+          "identifier": {
+            "CurseForgeProject": 326652
+          }
+        },
+        {
+          "name": "Dungeons and Taverns Ancient City Overhaul",
+          "identifier": {
+            "ModrinthProject": "DNuNq5bb"
+          }
+        },
+        {
+          "name": "Dungeons and Taverns Desert Temple Replacement",
+          "identifier": {
+            "ModrinthProject": "7JTDDmRT"
+          }
+        },
+        {
+          "name": "Dungeons and Taverns End Castle Standalone",
+          "identifier": {
+            "ModrinthProject": "WIs8E6hv"
+          }
+        },
+        {
+          "name": "Dungeons and Taverns Nether Fortress Overhaul",
+          "identifier": {
+            "ModrinthProject": "8Dbnvm77"
+          }
+        },
+        {
+          "name": "Dungeons and Taverns Ocean Monument Replacement",
+          "identifier": {
+            "ModrinthProject": "z6GJ3ycD"
+          }
+        },
+        {
+          "name": "Dungeons and Taverns Pillager Outpost Overhaul",
+          "identifier": {
+            "ModrinthProject": "QIt10I7z"
+          }
+        },
+        {
+          "name": "Dungeons and Taverns Stronghold Overhaul",
+          "identifier": {
+            "ModrinthProject": "rYocd2LE"
+          }
+        },
+        {
+          "name": "Dungeons and Taverns Swamp Hut Overhaul",
+          "identifier": {
+            "ModrinthProject": "nWSeFpQt"
+          }
+        },
+        {
+          "name": "Dungeons and Taverns Woodland Mansion Replacement",
+          "identifier": {
+            "ModrinthProject": "3GfxWFCy"
+          }
+        },
+        {
+          "name": "Elytra Trims",
+          "identifier": {
+            "ModrinthProject": "XpzGz7KD"
+          }
+        },
+        {
           "name": "Explorify",
           "identifier": {
             "ModrinthProject": "HSfsxuTo"
@@ -48,6 +132,12 @@
           "name": "Fabric API",
           "identifier": {
             "ModrinthProject": "P7dR8mSH"
+          }
+        },
+        {
+          "name": "Fabric Language Kotlin",
+          "identifier": {
+            "ModrinthProject": "Ha28R6CL"
           }
         },
         {
@@ -87,6 +177,12 @@
           }
         },
         {
+          "name": "Just Better Recipes",
+          "identifier": {
+            "ModrinthProject": "tXJjcIZK"
+          }
+        },
+        {
           "name": "Krypton",
           "identifier": {
             "ModrinthProject": "fQEb0iXm"
@@ -120,6 +216,18 @@
           "name": "ModernFix",
           "identifier": {
             "ModrinthProject": "nmDcB62a"
+          }
+        },
+        {
+          "name": "MSS - Moog's Soaring Structures",
+          "identifier": {
+            "ModrinthProject": "RJCLIx7k"
+          }
+        },
+        {
+          "name": "MVS - Moog's Voyager Structures",
+          "identifier": {
+            "ModrinthProject": "OQAgZMH1"
           }
         },
         {
@@ -171,9 +279,493 @@
           }
         },
         {
+          "name": "Towers of the Wild Modded",
+          "identifier": {
+            "ModrinthProject": "54eqfZSC"
+          }
+        },
+        {
+          "name": "Towns and Towers",
+          "identifier": {
+            "ModrinthProject": "DjLobEOy"
+          }
+        },
+        {
           "name": "Trinkets (Polymer Port)",
           "identifier": {
             "ModrinthProject": "G8hlgtEk"
+          }
+        },
+        {
+          "name": "Universal Graves",
+          "identifier": {
+            "ModrinthProject": "yn9u3ypm"
+          }
+        },
+        {
+          "name": "Villages & Pillages",
+          "identifier": {
+            "ModrinthProject": "klXONLDA"
+          }
+        },
+        {
+          "name": "YUNG's API",
+          "identifier": {
+            "ModrinthProject": "Ua7DFN59"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tomcrusade-fabric-1_21-client",
+      "output_dir": "mods-tomcrusade-fabric-1_21-client",
+      "game_version": "1.21",
+      "mod_loader": "Fabric",
+      "mods": [
+        {
+          "name": "Armor Trim Item Fix",
+          "identifier": {
+            "ModrinthProject": "kIhxG5zE"
+          }
+        },
+        {
+          "name": "BadOptimizations",
+          "identifier": {
+            "ModrinthProject": "g96Z4WVZ"
+          }
+        },
+        {
+          "name": "Better Advancements",
+          "identifier": {
+            "ModrinthProject": "Q2OqKxDG"
+          }
+        },
+        {
+          "name": "Better Clouds",
+          "identifier": {
+            "ModrinthProject": "5srFLIaK"
+          }
+        },
+        {
+          "name": "Better Ping Display [Fabric]",
+          "identifier": {
+            "ModrinthProject": "MS1ZMyR7"
+          }
+        },
+        {
+          "name": "Better Third Person",
+          "identifier": {
+            "ModrinthProject": "G1s2WpNo"
+          }
+        },
+        {
+          "name": "BetterF3",
+          "identifier": {
+            "ModrinthProject": "8shC1gFX"
+          }
+        },
+        {
+          "name": "cat_jam",
+          "identifier": {
+            "ModrinthProject": "x3s69afN"
+          }
+        },
+        {
+          "name": "Client Crafting",
+          "identifier": {
+            "CurseForgeProject": 888790
+          }
+        },
+        {
+          "name": "Cloth Config API",
+          "identifier": {
+            "ModrinthProject": "9s6osm5g"
+          }
+        },
+        {
+          "name": "Collective",
+          "identifier": {
+            "ModrinthProject": "e0M1UDsY"
+          }
+        },
+        {
+          "name": "Continuity",
+          "identifier": {
+            "ModrinthProject": "1IjD5062"
+          }
+        },
+        {
+          "name": "Cull Leaves",
+          "identifier": {
+            "ModrinthProject": "GNxdLCoP"
+          }
+        },
+        {
+          "name": "Debugify",
+          "identifier": {
+            "ModrinthProject": "QwxR6Gcd"
+          }
+        },
+        {
+          "name": "Distant Horizons",
+          "identifier": {
+            "ModrinthProject": "uCdwusMi"
+          }
+        },
+        {
+          "name": "Eating Animation",
+          "identifier": {
+            "ModrinthProject": "rUgZvGzi"
+          }
+        },
+        {
+          "name": "Elytra Trims",
+          "identifier": {
+            "ModrinthProject": "XpzGz7KD"
+          }
+        },
+        {
+          "name": "Enhanced Block Entities",
+          "identifier": {
+            "ModrinthProject": "OVuFYfre"
+          }
+        },
+        {
+          "name": "Entity Culling",
+          "identifier": {
+            "ModrinthProject": "NNAgCjsB"
+          }
+        },
+        {
+          "name": "Fabric API",
+          "identifier": {
+            "ModrinthProject": "P7dR8mSH"
+          }
+        },
+        {
+          "name": "Fabric Language Kotlin",
+          "identifier": {
+            "ModrinthProject": "Ha28R6CL"
+          }
+        },
+        {
+          "name": "Fadeless",
+          "identifier": {
+            "ModrinthProject": "ncKjyGm3"
+          }
+        },
+        {
+          "name": "FerriteCore",
+          "identifier": {
+            "ModrinthProject": "uXXizFIs"
+          }
+        },
+        {
+          "name": "First-person Model",
+          "identifier": {
+            "ModrinthProject": "H5XMjpHi"
+          }
+        },
+        {
+          "name": "Freecam (Modrinth Edition)",
+          "identifier": {
+            "ModrinthProject": "XeEZ3fK2"
+          }
+        },
+        {
+          "name": "Fzzy Config",
+          "identifier": {
+            "ModrinthProject": "hYykXjDp"
+          }
+        },
+        {
+          "name": "GUI Clock",
+          "identifier": {
+            "ModrinthProject": "g1yXisD2"
+          }
+        },
+        {
+          "name": "Indium",
+          "identifier": {
+            "ModrinthProject": "Orvt0mRa"
+          }
+        },
+        {
+          "name": "Iris Shaders",
+          "identifier": {
+            "ModrinthProject": "YL57xq9U"
+          }
+        },
+        {
+          "name": "Just Better Recipes",
+          "identifier": {
+            "ModrinthProject": "tXJjcIZK"
+          }
+        },
+        {
+          "name": "Lithium",
+          "identifier": {
+            "ModrinthProject": "gvQqBUqZ"
+          }
+        },
+        {
+          "name": "MaLiLib",
+          "identifier": {
+            "ModrinthProject": "GcWjdA9I"
+          }
+        },
+        {
+          "name": "M.R.U",
+          "identifier": {
+            "ModrinthProject": "SNVQ2c0g"
+          }
+        },
+        {
+          "name": "Mod Menu",
+          "identifier": {
+            "ModrinthProject": "mOgUt4GM"
+          }
+        },
+        {
+          "name": "More Chat History",
+          "identifier": {
+            "ModrinthProject": "8qkXwOnk"
+          }
+        },
+        {
+          "name": "No Chat Reports",
+          "identifier": {
+            "ModrinthProject": "qQyHxfxd"
+          }
+        },
+        {
+          "name": "No Telemetry",
+          "identifier": {
+            "ModrinthProject": "hg77g4Pw"
+          }
+        },
+        {
+          "name": "Not Enough Animations",
+          "identifier": {
+            "ModrinthProject": "MPCX6s5C"
+          }
+        },
+        {
+          "name": "Particle Core",
+          "identifier": {
+            "ModrinthProject": "RSeLon5O"
+          }
+        },
+        {
+          "name": "Polymer",
+          "identifier": {
+            "ModrinthProject": "xGdtZczs"
+          }
+        },
+        {
+          "name": "Remove Terralith Intro Message",
+          "identifier": {
+            "ModrinthProject": "sk4iFZGy"
+          }
+        },
+        {
+          "name": "Sodium",
+          "identifier": {
+            "ModrinthProject": "AANobbMI"
+          }
+        },
+        {
+          "name": "Sodium Shadowy Path Blocks",
+          "identifier": {
+            "ModrinthProject": "EIa1eiMm"
+          }
+        },
+        {
+          "name": "Sound Physics Remastered",
+          "identifier": {
+            "ModrinthProject": "qyVF9oeo"
+          }
+        },
+        {
+          "name": "Sounds",
+          "identifier": {
+            "ModrinthProject": "ZouiUX7t"
+          }
+        },
+        {
+          "name": "Spyglass Improvements",
+          "identifier": {
+            "ModrinthProject": "Z6ykjRlM"
+          }
+        },
+        {
+          "name": "Suggestion Tweaker",
+          "identifier": {
+            "ModrinthProject": "MBLj38R0"
+          }
+        },
+        {
+          "name": "Terralith",
+          "identifier": {
+            "ModrinthProject": "8oi3bsk5"
+          }
+        },
+        {
+          "name": "Text Placeholder API",
+          "identifier": {
+            "ModrinthProject": "eXts2L7r"
+          }
+        },
+        {
+          "name": "Universal Graves",
+          "identifier": {
+            "ModrinthProject": "yn9u3ypm"
+          }
+        },
+        {
+          "name": "YetAnotherConfigLib",
+          "identifier": {
+            "ModrinthProject": "1eAoo2KR"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tomcrusade-fabric-1_21-all",
+      "output_dir": "mods-tomcrusade-fabric-1_21-all",
+      "game_version": "1.21",
+      "mod_loader": "Fabric",
+      "mods": [
+        {
+          "name": "BCLib",
+          "identifier": {
+            "ModrinthProject": "BgNRHReB"
+          }
+        },
+        {
+          "name": "BetterEnd",
+          "identifier": {
+            "ModrinthProject": "gc8OEnCC"
+          }
+        },
+        {
+          "name": "BetterNether",
+          "identifier": {
+            "ModrinthProject": "MpzVLzy5"
+          }
+        },
+        {
+          "name": "Blockus",
+          "identifier": {
+            "ModrinthProject": "zFiY2Go0"
+          }
+        },
+        {
+          "name": "Cloth Config API",
+          "identifier": {
+            "ModrinthProject": "9s6osm5g"
+          }
+        },
+        {
+          "name": "Cut Through",
+          "identifier": {
+            "ModrinthProject": "Dk6su9JN"
+          }
+        },
+        {
+          "name": "Fabric API",
+          "identifier": {
+            "ModrinthProject": "P7dR8mSH"
+          }
+        },
+        {
+          "name": "Fish of Thieves",
+          "identifier": {
+            "ModrinthProject": "BzOTnuqM"
+          }
+        },
+        {
+          "name": "Forge Config API Port",
+          "identifier": {
+            "ModrinthProject": "ohNO6lps"
+          }
+        },
+        {
+          "name": "Friends&Foes (Fabric/Quilt)",
+          "identifier": {
+            "ModrinthProject": "POQ2i9zu"
+          }
+        },
+        {
+          "name": "Macaw's Bridges",
+          "identifier": {
+            "ModrinthProject": "GURcjz8O"
+          }
+        },
+        {
+          "name": "Macaw's Doors",
+          "identifier": {
+            "ModrinthProject": "kNxa8z3e"
+          }
+        },
+        {
+          "name": "Macaw's Fences and Walls",
+          "identifier": {
+            "ModrinthProject": "GmwLse2I"
+          }
+        },
+        {
+          "name": "Macaw's Lights and Lamps",
+          "identifier": {
+            "ModrinthProject": "w4an97C2"
+          }
+        },
+        {
+          "name": "Macaw's Paths and Pavings",
+          "identifier": {
+            "ModrinthProject": "VRLhWB91"
+          }
+        },
+        {
+          "name": "Macaw's Trapdoors",
+          "identifier": {
+            "ModrinthProject": "n2fvCDlM"
+          }
+        },
+        {
+          "name": "MidnightLib",
+          "identifier": {
+            "ModrinthProject": "codAaoxh"
+          }
+        },
+        {
+          "name": "Puzzles Lib",
+          "identifier": {
+            "ModrinthProject": "QAGBst4M"
+          }
+        },
+        {
+          "name": "Resourceful Lib",
+          "identifier": {
+            "ModrinthProject": "G1hIVOrD"
+          }
+        },
+        {
+          "name": "The Bumblezone - Quilt/Fabric",
+          "identifier": {
+            "ModrinthProject": "eA8SXqWL"
+          }
+        },
+        {
+          "name": "When Dungeons Arise",
+          "identifier": {
+            "ModrinthProject": "8DfbfASn"
+          }
+        },
+        {
+          "name": "World Weaver",
+          "identifier": {
+            "ModrinthProject": "RiN8rDVs"
           }
         }
       ]
