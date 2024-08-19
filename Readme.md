@@ -1,5 +1,5 @@
 # Docker minecraft with Ferium
-Have you ever wonder to make dockerized modde minecraft, but without manually download and migrate all mod files one by one, but unable to do so?
+Have you ever wonder to make dockerized modded minecraft, without manually download and migrate all mod files one by one, but unable to do so?
 Luckily, i succesfully experimented https://github.com/itzg/docker-minecraft-server with https://github.com/gorilla-devs/ferium, adjusting docker image, and **found a setup** that worked for me. Feel free to see the configuration and change it according to your needs.
 
 ## Setup
